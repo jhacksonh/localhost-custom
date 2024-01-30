@@ -13,7 +13,7 @@
             <img class="gif <?= $gif ?>" src="<?= $dir ?>zroot/imgs/<?= $gif ?>.gif" alt="GiF do <?= $gif ?>" srcset="">
         <?php endforeach ?>
     </header>
-    <div class="container">
+    <main class="container">
         <?php if ($dir == './') : ?>
             <div class="info">
                 <a href='?viewInfo=1'>Informações sobre o server</a>
@@ -31,7 +31,7 @@
             }
             ?>
         </ul>
-    </div>
+        </main>
     <footer>
         <?php for ($i = (count($giffs) - 1); $i >= 0; $i--) : ?>
             <img class="gif <?= $giffs[$i] ?>" src="<?= $dir ?>zroot/imgs/<?= $giffs[$i] ?>.gif" alt="GiF do <?= $giffs[$i] ?>" srcset="">
